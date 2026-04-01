@@ -430,7 +430,7 @@ body {
 
 
 .progress {
-    margin-top: 113px;
+    margin: 113px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -473,4 +473,138 @@ body {
 .progress__card_text {
     font-weight: 400;
     color: #525252;
+}
+
+/* progress end */
+
+.review {
+    padding: 131px 0 108px 0;
+    background-color: #f9fafb;
+}
+
+.review__cards {
+    display: flex;
+    gap: 41px;
+    justify-content: center;
+    align-items: start;
+}
+
+.review__card {
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.review__card--sec {
+    width: 34vw;
+}
+
+.review__card_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}
+
+.review__card_person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.person__info_title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.person__info_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #737373;
+}
+
+/* review end */
+
+.designers {
+    margin: 80px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+}
+
+.designers__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.designers__cards {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.designers__card {
+    width: 22%;
+    background-color: #f9fafb;
+    border-radius: 24px;
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designers__card_img {
+    width: 110%;
+}
+
+/* designers end */
+
+.keep {
+    padding: 80px 0 0 0;
+    background: linear-gradient(355deg, #fb432c 0%, #ff591e 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.keep * {
+    color: white;
+}
+
+.startForFree--white {
+    background: none;
+    background-color: white;
+    color: #111111;
+}
+
+.keep__title {
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 116%;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+.keep__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175%;
+    text-align: center;
+
+    width: 21vw;
 }

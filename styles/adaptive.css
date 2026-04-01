@@ -70,6 +70,14 @@
         width: 95%;
     }
 
+    .review__card{
+        width: 34vw;
+    }
+
+    .review__card--sec{
+        width: 37vw;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -101,6 +109,15 @@
 
    .feedback__img > img{
         width: 300px;
+    }
+
+    .designers__cards{
+        width: 97vw;
+        gap: 15px;
+    }
+
+    .designers__card{
+        width: 30%;
     }
 
 }
@@ -165,6 +182,15 @@
     }
 
     .progress__cards_card{
+        width: 80vw;
+    }
+
+    .review__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review__card{
         width: 80vw;
     }
 
@@ -324,8 +350,22 @@
         width: 100%;
     }
 
-    .progress__title{
+    .progress__title, .designers__title{
         font-size: 38px;
+    }
+
+    .designers__card{
+        width: 45%;
+        border-radius: 12px;
+        padding: 40px 28px;
+    }
+
+    .designers__card_img{
+        width: 120%;
+    }
+
+    .designers__cards{
+        gap: 56px 10px;
     }
 
 }
@@ -348,7 +388,7 @@
         display: block;
     }
 
-    .share__info_title, .feedback__info_title{
+    .share__info_title, .feedback__info_title, .designers__title{
         font-size: 24px;
     }
 
