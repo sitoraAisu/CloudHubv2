@@ -116,6 +116,7 @@ body {
     z-index: 9;
 }
 
+<<<<<<< HEAD
 .header__login{
     z-index: 30;
     position: fixed;
@@ -170,6 +171,8 @@ body {
     display: block;
 }
 
+=======
+>>>>>>> 002cee674cac32b81f6fb6aac98fe87182c7593e
 /* nav end */
 
 .main {
@@ -766,6 +769,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+<<<<<<< HEAD
 }
 
 
@@ -800,4 +804,6 @@ body {
 .scrollVis{
     opacity: 1;
     z-index: 5;
+=======
+>>>>>>> 002cee674cac32b81f6fb6aac98fe87182c7593e
 }

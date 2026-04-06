@@ -1,5 +1,6 @@
 const openNav = () => {
     for (let i = 0; i < bars.length; i++) {
+<<<<<<< HEAD
 
         bars[i].classList.toggle('dis--on')
 
@@ -51,3 +52,12 @@ const loginBlock = document.querySelector(".header__login"),
 
 const bars = [document.querySelector('.nav__items_list'), document.querySelector('.nav__btns')]
 
+=======
+        
+        bars[i].classList.toggle('dis--on')
+        
+    }
+}
+
+const bars = [document.querySelector('.nav__items_list'), document.querySelector('.nav__btns')]
+>>>>>>> 002cee674cac32b81f6fb6aac98fe87182c7593e
