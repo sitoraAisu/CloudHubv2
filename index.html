@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="stylesheet" href="styles/animation.css">
     <title>CloudHub</title>
 </head>
 <body>
@@ -21,11 +22,11 @@
 
                 <ul class="nav__items_list">
 
-                    <li class="items__list_link"><a href="#">Product 1</a></li>
+                    <li class="items__list_link"><a href="#">Product</a></li>
                     <li class="items__list_link"><a href="#">Home</a></li>
                     <li class="items__list_link"><a href="#">Shop</a></li>
                     <li class="items__list_link"><a href="#">Pages</a></li>
-                    <li class="items__listsdf_link"><a href="#">Integrations</a></li>
+                    <li class="items__list_link"><a href="#">Integrations</a></li>
                     <li class="items__list_link"><a href="#">Developers</a></li>
 
                 </ul>
@@ -34,7 +35,7 @@
 
             <div class="nav__btns">
 
-                <button class="btns__login">Login</button>
+                <button class="btns__login" onclick="openLogin()">Login</button>
                 <button class="startForFree">Start for free</button>
 
             </div>
@@ -43,9 +44,30 @@
 
         </nav>
 
+        <div class="header__login">
+
+            <form class="login__form">
+
+                <h2 class="form__title">Enter your information</h2>
+
+                <input type="text" class="form__input" name="username" placeholder="Enter your username" id="username">
+                <input type="text" class="form__input" name="email" placeholder="Enter your email" id="email">
+                <input type="text" class="form__input" name="password" placeholder="Enter your password" id="password">
+
+                <button class="form__btn" onclick="setCookie()">Enter!</button>
+
+
+            </form>
+
+        </div>
+
     </header>
 
     <main class="main">
+
+        <div class="main__btnScrollUp" onclick="toTop()"><h2 class="scroll__title">Up!</h2></div>
+
+        <div class="main__btnScrollDown" onclick="toDown()"><h2 class="scroll__title">Down!</h2></div>
 
         <section class="hero">
 
@@ -231,7 +253,169 @@
 
         </section>
 
+        <section class="review">
+
+            <div class="review__cards">
+
+                <article class="review__card">
+
+                    <div class="review__card_img"><img src="imgs/iconBLue.svg" alt="gabriel"></div>
+
+                    <p class="review__card_text">Cloudhub has emerged as an essential asset for the team at Patreon design. Amidst an accelerated expanding organization in which the product undergoes rapid changes, Campsite enables us to maintain visibility on what's transpiring across various teams — impeccably aligning with our pre-existing procedures.</p>
+
+                    <div class="review__card_person">
+
+                        <img src="imgs/gabriel.jpg" alt="" class="person__img">
+
+                        <div class="person__info">
+                            <h6 class="person__info_title">Gabriel Valdivia</h6>
+                            <p class="person__info_text">Principal Product Designer, Patreon</p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="review__card review__card--sec">
+
+                    <div class="review__card_img"><img src="imgs/iconDzen.svg" alt="gabriel"></div>
+
+                    <p class="review__card_text">Cloudhub has demonstrated exceptional worth in preserving open communication among designers regarding their current endeavors, a challenge that previously impeded our progress. It continually stands as a distinctive platform guiding our dialogue towards imagination and consistent review, an element I highly value. Moreover, it has accelerated our propensity for early-stage feedback beyond my expectations.</p>
+
+                    <div class="review__card_person">
+
+                        <img src="imgs/buzz.jpg" alt="" class="person__img">
+
+                        <div class="person__info">
+                            <h6 class="person__info_title">Buzz Usborne</h6>
+                            <p class="person__info_text">Principal Designer, Buildkite</p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="designers">
+
+            <h2 class="designers__title">Loved By Designers At</h2>
+
+            <div class="designers__cards">
+
+                <div class="designers__card">
+                    <img src="imgs/loved1.svg" alt="crowdstrike" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved2.svg" alt="airbus" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved3.svg" alt="autodesk" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved4.svg" alt="sentry" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved5.svg" alt="medwing" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved6.svg" alt="pacific" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved7.svg" alt="liquid web" class="designers__card_img">
+                </div>
+
+                <div class="designers__card">
+                    <img src="imgs/loved8.svg" alt="autotrader" class="designers__card_img">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="keep">
+
+            <h2 class="keep__title">Keep every one in the loop</h2>
+
+            <p class="keep__text">All good things starts with a homepage. Get inspired without breaking your wallet.</p>
+
+            <button class="startForFree startForFree--larger startForFree--white">Start for free</button>
+
+            <img src="imgs/keepBg.png" alt="code" class="keep__img">
+
+        </section>
+
+        <section class="increase">
+
+            <div class="increase__logo"><img src="imgs/logoWhite.svg" alt="logo"></div>
+            
+             <h4 class="increase__title">Increase your team’s visibility and alignment</h4>
+
+             <p class="increase__text">Start for free, flexible for all teams.</p>
+
+             <div class="increase__btns">
+
+                <button class="increase__btn">Request a demo</button>
+
+                <button class="startForFree startForFree--large">Start for free</button>
+
+             </div>
+
+        </section>
+
     </main>
+
+    <footer class="footer">
+
+        <nav class="footer__nav">
+
+            <div class="footer__logo"><img src="imgs/logoWhite.svg" alt="logo"></div>
+
+            <ul class="footer__nav_list">
+                <h6 class="footer__list_title">Product</h6>
+
+                <li class="footer__list_link"><a href="">Features</a></li>
+                <li class="footer__list_link"><a href="">Pricing</a></li>
+                <li class="footer__list_link"><a href="">Changelog</a></li>
+                <li class="footer__list_link"><a href="">Support</a></li>
+            </ul>
+
+            <ul class="footer__nav_list">
+                <h6 class="footer__list_title">Legal</h6>
+
+                <li class="footer__list_link"><a href="">Terms of Privacy</a></li>
+                <li class="footer__list_link"><a href="">Privacy Policy</a></li>
+                <li class="footer__list_link"><a href="">Security</a></li>
+            </ul>
+
+            <ul class="footer__nav_list">
+                <h6 class="footer__list_title">Company</h6>
+
+                <li class="footer__list_link"><a href="">Blog</a></li>
+                <li class="footer__list_link"><a href="">Contact</a></li>
+            </ul>
+
+            <ul class="footer__nav_list">
+                <h6 class="footer__list_title">Social</h6>
+
+                <li class="footer__list_link"><a href="">Dribbble</a></li>
+                <li class="footer__list_link"><a href="">Behance</a></li>
+                <li class="footer__list_link"><a href="">Discord</a></li>
+            </ul>
+
+        </nav>
+
+        <p class="footer__rights">All rights reserved.© 2024 DejectStudio</p>
+
+    </footer>
     
 </body>
 <script src="script/index.js"></script>

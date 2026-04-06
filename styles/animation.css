@@ -1,0 +1,41 @@
+@keyframes loginAnim {
+    0%{
+        transform: scale(1) translateX(-190px);
+    }
+
+    50%{
+        transform: scale(1.02) translateX(-190px);
+    }
+
+    100%{
+        transform: scale(1) translateX(-190px);
+    }
+}
+
+@keyframes scroll {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.header__login{
+    animation-name: loginAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.main__btnScrollDown{
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
