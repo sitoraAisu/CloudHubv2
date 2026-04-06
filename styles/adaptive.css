@@ -417,6 +417,17 @@
         font-size: 26px;
     }
 
+    .header__login{
+        width: 250px;
+
+        left: 65vw;
+    }
+
+    .form__title{
+        font-size: 24px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -490,4 +501,10 @@
         gap: 20px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .header__login{
+        left: 70vw;
+    }
 }
