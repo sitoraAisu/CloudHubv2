@@ -43,10 +43,24 @@ const toDown = () => {
     window.scrollTo(0, document.body.scrollHeight)
 }
 
+const handler = (event) => {
+
+    const centerHorizontalScreen = event.clientX / 100
+    const centerVerticalScreen = event.clientY / 30
+
+    logoISection.style.transform = `translate(-${centerHorizontalScreen}px, -${centerVerticalScreen}px)`
+    footerLogo.style.transform = `translate(-${centerHorizontalScreen}px, -${centerVerticalScreen}px)`
+
+}
+
+window.addEventListener("mousemove", handler)
+
 window.addEventListener("scroll", scrollTop)
 
 const loginBlock = document.querySelector(".header__login"),
         scrollUp = document.querySelector(".main__btnScrollUp"),
-        scrollDown = document.querySelector(".main__btnScrollDown");
+        scrollDown = document.querySelector(".main__btnScrollDown"),
+        logoISection = document.querySelector(".increase__logo"),
+        footerLogo = document.querySelector(".footer__logo");
 
 const bars = [document.querySelector('.nav__items_list'), document.querySelector('.nav__btns')]
